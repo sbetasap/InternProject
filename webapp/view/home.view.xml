@@ -1,0 +1,60 @@
+<mvc:View controllerName="studentcomp.controller.home"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>Intern}">
+    <Panel id="_IDGenPanel3" headerText=" Welcome  "> </Panel > 
+
+<Table 
+                                id="userSelectionTable"
+                                items="{/value}">
+                                <columns>
+                                    <Column>
+                                        <Button id="CourseButton" text="{i18n>Courses}" press=".courseRoute" />
+                                    </Column>
+                                    <Column>
+                                        <Button id="pointsButton" text="{i18n>Points}" press=".pointsRoute" />
+                                    </Column>
+                                    <Column>
+                                        <Button id="notificationsButton" text="{i18n>Notifications}" press=".notificationsRoute" />
+                                    </Column>
+                                    <Column>
+                                        <Button id="profileButton" text="{i18n>Profile}" press=".profileRoute" />
+                                    </Column>
+                                    <Column>
+                                        <Button id="settingsButton" text="{i18n>Settings}" press=".settingsRoute" />
+                                    </Column>
+                                      <Column>
+                                     <Button id="testButton" text="{i18n>Test}" press=".testRoute" />
+                                       
+                                    </Column>
+                                  
+                                </columns>
+
+                                <SearchField liveChange=".onSearch"/>
+                            </Table>
+
+<Button id="menuButton" text="{i18n>menu}" press=".menuRoute" />
+
+
+
+<Panel id="_IDGenPanel5" headerText=" ^^^put some media files in here "> </Panel > 
+
+<!--    
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>mkenckdsds
+</div>  
+    -->
+
+
+        <content />
+
+            
+    </Page>
+</mvc:View>
+
+
+
